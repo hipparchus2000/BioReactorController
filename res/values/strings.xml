@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bioController app</string>
+    <string name="settings">Settings</string>
+    <string name="charts">Charts and Setpoints</string>
+    <string name="connect">Connect</string>
+    <string name="recipies">Recipies</string>
+    <string name="system">System</string>
+    <string name="title_activity_batch_management">BatchManagement</string>
+    <string name="title_activity_calibrate_ph">Calibrate pH</string>
+    <string name="title_activity_charts">Charts</string>
+    <string name="title_activity_connect">Connect to bioController</string>
+    <string name="title_activity_recipie_management">RecipieManagement</string>
+    <string name="title_activity_system">System</string>
+    <string name="connectmenu">Connect Menu</string>
+    <string name="bluetooth">Connect Bluetooth</string>
+    <string name="calibratePH">Calibrate pH Sensor</string>
+    <string name="calibrateDO">Calibrate DO Sensor</string>
+    <string name="calibrateVCD">Calibrate VCD sensor</string>
+    <string name="CalibratePHsensorMenu">Calibrate pH sensor menu</string>
+    <string name="ph10">Calibrate with pH10</string>
+    <string name="ph7">Calibrate with pH7</string>
+    <string name="ph4">Calibrate with pH4</string>
+    <string name="systemStatus">System Status: </string>
+    <string name="RecipieManagement">Recipie Management</string>
+    <string name="LoadRecipie">Load Recipie</string>
+    <string name="SaveRecipie">Save Recipie</string>
+    <string name="SendRecipie">Send Recipie</string>
+    <string name="FetchRecipie">Fetch Recipie</string>
+    <string name="EditRecipie">Edit Recipie</string>
+    <string name="RunRecipie">Run Recipie</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="PIN">Bluetooth PIN</string>
+    <string name="BatchManagement">Batch Management</string>
+    <string name="BatchName">Batch Name</string>
+    <string name="BatchNotes">Batch Notes</string>
+    <string name="BatchStatus">Status:</string>
+    <string name="StartBatch">Start Batch</string>
+    <string name="EndBatch">End Batch</string>
+    <string name="ExtractRecipieFromBatch">Extract Recipie From Batch</string>
+    <string name="AddEventMarker">Add Event Marker</string>
+    <string name="FetchBatchData">Fetch Batch Data (.csv)</string>
+    <string name="DeleteBatchData">Delete Batch Data</string>
+    <string name="pH">pH</string>
+    <string name="DO">DO</string>
+    <string name="VCD">VCD</string>
+    <string name="temp">Temp</string>
+    <string name="ImpellerSpeed">Impeller Speed</string>
+    <string name="antifoam">Antifoam Pump</string>
+    <string name="CO2sparge">CO2 Sparge</string>
+    <string name="Heater">Heater</string>
+    <string name="MediaPump">Media Pump</string>
+    <string name="BasePump">Base Pump</string>
+    <string name="AcidPump">Acid Pump</string>
+    <string name="AirSparge">Air Sparge</string>
+    <string name="title_activity_edit_user">EditUser</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

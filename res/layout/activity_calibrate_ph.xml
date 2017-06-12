@@ -1,0 +1,55 @@
+    <ScrollView     xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent">
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context=".aCalibratePH" >
+
+    <TextView
+        android:id="@+id/SystemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CalibratePHsensorMenu" />
+
+    <Button
+        android:id="@+id/bPH4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SystemStatus"
+        android:layout_below="@+id/SystemStatus"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="66dp"
+        android:text="@string/ph4" />
+
+    <Button
+        android:id="@+id/bPH7"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bPH4"
+        android:layout_below="@+id/bPH4"
+        android:layout_marginTop="24dp"
+        android:text="@string/ph7" />
+
+    <Button
+        android:id="@+id/bPH10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bPH7"
+        android:layout_centerVertical="true"
+        android:text="@string/ph10" />
+
+</RelativeLayout>
+</ScrollView>

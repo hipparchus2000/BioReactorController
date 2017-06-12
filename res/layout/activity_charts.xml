@@ -1,0 +1,544 @@
+    <ScrollView     xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent">
+
+<RelativeLayout     
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context=".aCharts" >
+
+    
+	<TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#555555" >
+        
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvParameters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+		        android:textSize="13sp"
+                android:padding="5dp"
+                android:text="Parameter" />
+
+            <TextView
+                android:id="@+id/pHsetPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+		        android:textSize="13sp"
+                android:padding="5dp"
+                android:text="Set Point" />
+
+            <TextView
+                android:id="@+id/tvActuals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+		        android:textSize="13sp"
+                android:padding="5dp"
+                android:text="Actual" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableBatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/tvBatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+		        android:textSize="13sp"
+                android:text="Recipie/Batch" />
+
+            <TextView
+                android:id="@+id/pBatchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+		        android:textSize="13sp"
+                android:text="CD56" />
+            
+            <TextView
+                android:id="@+id/pBatchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+		        android:textSize="13sp"
+                android:text="CD56" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRowTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+		        android:textSize="13sp"
+                android:text="Minutes into Batch" />
+
+            <TextView
+                android:id="@+id/pTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+		        android:textSize="13sp"
+                android:text="576" />
+
+            <TextView
+                android:id="@+id/pTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+		        android:textSize="13sp"
+                android:text="135" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvPH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/pH" />
+
+            <TextView
+                android:id="@+id/pHsetPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="7.1" />
+
+            <TextView
+                android:id="@+id/tvpHactual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="7.3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvDO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/DO" />
+
+            <TextView
+                android:id="@+id/DOsetPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="234" />
+
+            <TextView
+                android:id="@+id/DOactual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="239" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvVCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/VCD" />
+
+            <TextView
+                android:id="@+id/tvVCDsetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="na" />
+
+            <TextView
+                android:id="@+id/tvVCDactual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="1.26e6" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/temp" />
+
+            <TextView
+                android:id="@+id/tvTempsetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="23.1" />
+
+            <TextView
+                android:id="@+id/tvTempactual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="23.3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvImpeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/ImpellerSpeed" />
+
+            <TextView
+                android:id="@+id/tvImpellerSetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="30rpm" />
+
+            <TextView
+                android:id="@+id/tvImpellerActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FFFF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvAirSparge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FFFF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/AirSparge" />
+
+            <TextView
+                android:id="@+id/tvAirSpargeSetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FFFF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="Auto" />
+
+            <TextView
+                android:id="@+id/tvAirSpargeActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FFFF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="off" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvCO2sparge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FFFF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/CO2sparge" />
+
+            <TextView
+                android:id="@+id/tvCO2SpargeSetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FFFF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="Manual" />
+
+            <TextView
+                android:id="@+id/tvCO2SpargeActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FFFF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="off" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvAcidPump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/AcidPump" />
+
+            <TextView
+                android:id="@+id/tvAcidPumpSetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="Auto" />
+
+            <TextView
+                android:id="@+id/tvAcidPumpActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="off" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvBasePump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/BasePump" />
+
+            <TextView
+                android:id="@+id/tvBasePumpSetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="Auto" />
+
+            <TextView
+                android:id="@+id/tvBasePumpActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="off" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvMediaPump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/MediaPump" />
+
+            <TextView
+                android:id="@+id/tvMediaPumpSetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="Manual" />
+
+            <TextView
+                android:id="@+id/tvMediaPumpActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FF00FF"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="off" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvHeater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="@string/Heater" />
+
+            <TextView
+                android:id="@+id/tvHeaterSetpoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="Auto" />
+
+            <TextView
+                android:id="@+id/tvHeaterActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#00FF00"
+                android:padding="5dp"
+		        android:textSize="13sp"
+                android:text="off" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_below="@+id/tableLayout1"
+        android:text="Mark Event"
+        android:textSize="12sp" />
+        
+    
+    
+</RelativeLayout>
+
+</ScrollView>

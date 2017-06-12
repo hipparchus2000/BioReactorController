@@ -1,0 +1,61 @@
+    <ScrollView     xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent">
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context=".aRecipieManagement" >
+
+    <Button
+        android:id="@+id/bCopyRecipie"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:text="Copy Recipie" />
+
+    <Button
+        android:id="@+id/bDeleteRecipie"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bCopyRecipie"
+        android:text="Delete Recipie" />
+    
+    <Button
+        android:id="@+id/bEditRecipie"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bDeleteRecipie"
+        android:text="@string/EditRecipie" />
+    
+    <Button
+        android:id="@+id/bViewRecipie"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+   		android:layout_below="@+id/bEditRecipie"
+        android:text="View Recipie" />
+    
+    <Button
+        android:id="@+id/bFetchRecipie"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bViewRecipie"
+        android:text="Fetch Recipie (.csv)" />
+    
+    <Button
+        android:id="@+id/bSendRecipie"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bFetchRecipie"
+        android:text="Send Recipie (.csv)" />
+
+</RelativeLayout>
+</ScrollView>

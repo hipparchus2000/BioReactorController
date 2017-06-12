@@ -1,0 +1,82 @@
+    <ScrollView     xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent">
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:contentDescription="@string/system"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context=".aSystem" >
+
+    <TextView
+        android:id="@+id/SystemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/system" />
+
+    <Button
+        android:id="@+id/calpH"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SystemStatus"
+        android:layout_below="@+id/SystemStatus"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="32dp"
+        android:onClick="mCalibratePH"
+        android:text="@string/calibratePH" />
+
+    <Button
+        android:id="@+id/calibrateDO"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calpH"
+        android:layout_below="@+id/calpH"
+        android:text="@string/calibrateDO" />
+
+    <Button
+        android:id="@+id/calibrateVCD"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calibrateDO"
+        android:layout_below="@+id/calibrateDO"
+        android:text="@string/calibrateVCD" />
+
+    <Button
+        android:id="@+id/bCalibrateTemp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calibrateVCD"
+        android:layout_below="@+id/calibrateVCD"
+        android:text="Calibrate Temperature Sensor" />
+
+    <Button android:id="@+id/bEditUsers" style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/bCalibrateTemp" android:layout_below="@+id/bCalibrateTemp" android:onClick="mEditUser" android:text="Edit Users" /><Button
+        android:id="@+id/bChangePIN"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bEditUsers"
+        android:layout_below="@+id/bEditUsers"
+        android:text="Change Controller PIN" />
+
+    <Button
+        android:id="@+id/bChangeControllerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bChangePIN"
+        android:layout_below="@+id/bChangePIN"
+        android:text="Change Controller Name" />
+
+</RelativeLayout>
+</ScrollView>
